@@ -1,7 +1,7 @@
 ## About Me
 I'm a Computer Science graduate student at the University of Nevada, Reno, with a multidisciplinary background in AI/LLMs, data analytics, enterprise support, and MIS systems. I build intelligent, user-focused tools that blend deep technical functionality with practical business value. I'm also deeply interested in research involving AI, Large Language Models (LLMs), and Natural Language Processing (NLP).
 
-###What I Do:
+## What I Do:
 
 - **Design and deploy LLM-powered applications for support automation, document retrieval, and intelligent user interaction**
 
