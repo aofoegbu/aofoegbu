@@ -1,16 +1,13 @@
-## Hi there 👋
+I'm a Computer Science graduate student at the University of Nevada, Reno, with a multidisciplinary background in AI/LLMs, data analytics, enterprise support, and MIS systems. I build intelligent, user-focused tools that blend deep technical functionality with practical business value. I'm also deeply interested in research involving AI, Large Language Models (LLMs), and Natural Language Processing (NLP).
 
-<!--
-**aofoegbu/aofoegbu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💡 What I Do:
 
-Here are some ideas to get you started:
+Design and deploy LLM-powered applications for support automation, document retrieval, and intelligent user interaction
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Build cloud-based workflows, RESTful APIs, databases, and large-scale software systems that support operational and analytical needs
+
+Develop data integration and analytics platforms that deliver real-time insights and process transparency
+
+Create support engineering tools for diagnostics, ticketing, and system troubleshooting
+
+Lead MIS-aligned process tracking, visualization, and optimization initiatives
