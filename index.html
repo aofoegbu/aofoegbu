@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augustine Ofoegbu - AI-Focused IT Professional</title>
+    <meta name="description" content="Augustine Ofoegbu's portfolio - AI-Focused IT Professional specializing in React, Node.js, and modern web technologies. View my projects, experience, and get in touch.">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Augustine Ofoegbu - AI-Focused IT Professional">
+    <meta property="og:description" content="Professional portfolio showcasing web development projects and experience">
+    <meta property="og:type" content="website">
+    
+    <!-- Font and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --primary-dark: #2563eb;
+            --secondary-color: #1e293b;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-accent: #f1f5f9;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            scroll-behavior: smooth;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+        
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+        
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-primary);
+            transition: 0.3s;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            padding-top: 80px;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-text .highlight {
+            color: var(--primary-color);
+        }
+        
+        .hero-text p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .profile-circle {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: rgba(59, 130, 246, 0.4);
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .bg-gray {
+            background-color: var(--bg-secondary);
+        }
+        
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+        
+        .about-card {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .about-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .skills-list {
+            margin-bottom: 1.5rem;
+        }
+        
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        
+        .skill-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--border-color);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background: var(--primary-color);
+            transition: width 2s ease;
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info i {
+            color: var(--primary-color);
+            margin-right: 1rem;
+            width: 20px;
+        }
+        
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background: var(--bg-primary);
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .project-content {
+            padding: 1.5rem;
+        }
+        
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-description {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tag {
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--primary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .project-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            transition: color 0.3s ease;
+        }
+        
+        .project-link:hover {
+            color: var(--primary-dark);
+        }
+        
+        /* Experience Section */
+        .experience-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .timeline {
+            position: relative;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 1rem;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: rgba(59, 130, 246, 0.2);
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0.5rem;
+            top: 0;
+            width: 1rem;
+            height: 1rem;
+            background: var(--primary-color);
+            border-radius: 50%;
+        }
+        
+        .timeline-content {
+            background: var(--bg-accent);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-title {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .timeline-period {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+        
+        .timeline-company {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        .timeline-achievements {
+            list-style: none;
+        }
+        
+        .timeline-achievements li {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1rem;
+        }
+        
+        .timeline-achievements li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .skill-category h4 {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+        }
+        
+        .skill-category li {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: var(--secondary-color);
+            color: white;
+        }
+        
+        .contact .section-title,
+        .contact .section-subtitle {
+            color: white;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .contact-info-section h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-icon {
+            width: 3rem;
+            height: 3rem;
+            background: var(--primary-color);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+        }
+        
+        .contact-icon i {
+            color: white;
+            font-size: 1.25rem;
+        }
+        
+        .contact-details h4 {
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+        
+        .contact-details p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .social-link {
+            width: 2.5rem;
+            height: 2.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: var(--primary-color);
+        }
+        
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 1rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.5rem;
+            color: white;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary-color);
+        }
+        
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: white;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 2rem;
+                transition: right 0.3s ease;
+            }
+            
+            .nav-menu.active {
+                right: 0;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+            
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .experience-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 0.5rem;
+            }
+            
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-text p {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .profile-circle {
+                width: 250px;
+                height: 250px;
+                font-size: 3rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        /* Smooth scrolling for older browsers */
+        html {
+            scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#home" class="logo">Augustine Ofoegbu</a>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm Augustine<br><span class="highlight">AI-Focused IT Professional</span></h1>
+                    <p>Technically proficient IT expert with AI and Data Science skills, strong communication, and a track record in fast-paced tech environments.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-code"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-circle">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Dedicated to crafting exceptional digital experiences through innovative technology solutions.</p>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>My Story</h3>
+                    <p>I'm an IT professional with a strong background in systems support, data analysis, and AI. I’ve worked across research, government, and enterprise environments—building smart tools, supporting users, and helping teams solve real problems with technology.</p>
+                    <p>I enjoy turning data into insights and using AI to automate tasks, improve decisions, and streamline workflows. Whether it’s fixing systems, creating reports, or building better processes, I focus on making technology clear, useful, and people-friendly.
+
+</p>
+                </div>
+                
+                <div>
+                    <div class="about-card">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span>LLMs and NLP</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <span>Software Engineering</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <span>Cloud and DevOps</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card" style="margin-top: 1.5rem;">
+                        <h3>Quick Facts</h3>
+                        <div class="contact-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Reno, NV</span>
+                        </div>
+                        <div class="contact-info">
+                            <i class="fas fa-envelope"></i>
+                            <span>augustineogelo@gmail.com</span>
+                        </div>
+                        <div class="contact-info">
+                            <i class="fas fa-phone"></i>
+                            <span>916-598-9810</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-gray">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A showcase of my recent work, demonstrating my expertise in AI Systems, Software Engineering, Management Information Systems and IT Support.</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://raw.githubusercontent.com/aofoegbu/smart_infrastructure_monitoring_system/main/screenshots/monitoring_system.png" alt="Smart Infrastructure Management System" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Infrastructure Management System</h3>
+                        <p class="project-description">Enterprise-grade Smart Infrastructure Monitoring System, featuring real-time sensor monitoring, AI-powered anomaly detection, and data governance for utility networks.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://smart-infra-monitor-augustineogelo.replit.app/Home" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/aofoegbu/smart_infrastructure_monitoring_system" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="project-card">
+                    <img src="https://raw.githubusercontent.com/aofoegbu/rag_chatbot_with_web_search/main/screenshots/rag_chat.png" alt="RAG Chat Assistant" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">RAG Chat Assistant</h3>
+                        <p class="project-description">An AI-powered document processing and knowledge retrieval system that provides comprehensive answers to any question with proper source citations.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">PerplexityAPI</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ai-chat-companion-augustineogelo.replit.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/aofoegbu/rag_chatbot_with_web_search" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="https://raw.githubusercontent.com/aofoegbu/llm_explainer/main/screenshots/llm_explainer.png" alt="LLM Explainer App" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">LLM Explainer App</h3>
+                        <p class="project-description">Concise Large Language Model (LLM) training pipeline with interactive visualizations and technical insights.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Plotly</span>
+                            <span class="tag">Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://machine-learning-explorer-augustineogelo.replit.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/aofoegbu/llm_explainer" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="https://raw.githubusercontent.com/aofoegbu/sql_querybuilder/main/screenshots/sql_builder.png" alt="SQL Query Builder" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">SQL Query Builder</h3>
+                        <p class="project-description">A comprehensive SQL Builder providing a visual GUI for SQL query building, execution, reporting and visualization.</p>
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Nodejs</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://sql-report-craft-augustineogelo.replit.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/aofoegbu/sql_querybuilder" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <img src="https://raw.githubusercontent.com/aofoegbu/techsupport_ai/main/screenshots/ai_support.png" alt="Tech Support AI" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Tech Support AI</h3>
+                        <p class="project-description">Interactive AI-powered support troubleshooting app that uses Google Gemini AI to provide issue analysis, problem-solving, and real-time system diagnostics.</p>
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Nodejs</span>
+                            <span class="tag">GeminiAI</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://tech-support-ai-augustineogelo.replit.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/aofoegbu/techsupport_ai" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <img src="https://raw.githubusercontent.com/aofoegbu/erp-crm-integration/main/screenshots/dashboard.png" alt="ERP/CRM Integrator" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">ERP and CRM Integrator</h3>
+                        <p class="project-description">A comprehensive ERP and CRM integration platform with AI-powered customer support, real-time monitoring, and intelligent ticket management, featuring a free Google Gemini AI chatbot.</p>
+                        <div class="project-tags">
+                            <span class="tag">Typescript</span>
+                            <span class="tag">Nodejs</span>
+                            <span class="tag">GeminiAI</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://erp-crm-integrator-augustineogelo.replit.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/aofoegbu/erp-crm-integration" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <img src="https://raw.githubusercontent.com/aofoegbu/business_process_project_tracker/main/screenshots/biz-tracker.png" alt="Business Process and Project Tracker" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Business Process and Project Tracker</h3>
+                        <p class="project-description">Business Process Mapper with visual designer and Project Tracker with requirements, costs, and testing.</p>
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Nodejs</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Mermaid.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://business-flow-tracker-augustineogelo.replit.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/aofoegbu/business_process_project_tracker" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <img src="https://raw.githubusercontent.com/aofoegbu/water_utility_dashboard/main/screenshots/dashboard-preview.png" alt="Water Utility Dashboard" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Water Utility Dashboard</h3>
+                        <p class="project-description">A comprehensive real-time water utility management system providing operational intelligence, infrastructure monitoring, and advanced reporting capabilities for municipal water operations..</p>
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Nodejs</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Recharts</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://water-utility-tracker-augustineogelo.replit.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/aofoegbu/water_utility_dashboard" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            <p class="section-subtitle">My professional journey and educational background that shaped my expertise.</p>
+            
+            <div class="experience-grid">
+                <div>
+                    <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 2rem;">Professional Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4 class="timeline-title">IT Data Analyst</h4>
+                                    <span class="timeline-period">February 2021 - July 2022</span>
+                                </div>
+                                <p class="timeline-company">PSL Ltd</p>
+                                <ul class="timeline-achievements">
+                                    <li>Delivered technical support and analytics services to employees across HQ and remote sites.</li>
+                                    <li>Built and maintained dashboards and interactive reports, streamlining executive decision-making.</li>
+                                    <li>Automated data integration pipelines to support reporting and AI-driven forecasting, improving data accuracy and processing speed.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4 class="timeline-title">System Analyst</h4>
+                                    <span class="timeline-period">March 2021 - February 2022</span>
+                                </div>
+                                <p class="timeline-company">Anambra Internal Revenue Service</p>
+                                <ul class="timeline-achievements">
+                                    <li>Supported taxpayer registration and revenue collection platforms, implementing process improvements that reduced manual work by 30%.</li>
+                                    <li>Analyzed workflows, authored SOPs, and enforced audit and access controls that supported government IT policy compliance.</li>
+                                    <li>Served as the main point of contact for vendor and technical support escalations during systems implementation.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 2rem;">Education & Skills</h3>
+                    
+                    <div class="about-card">
+                        <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 1rem;">Education</h4>
+                        <div>
+                            <h5 style="font-weight: 500; color: var(--text-primary);">Master of Science in Computer Science</h5>
+                            <p style="color: var(--primary-color); margin: 0;">University of Nevada Reno</p>
+                            <p style="color: var(--text-secondary); font-size: 0.875rem; margin: 0;">2022 - 2025 | GPA: 3.8/4.0</p>
+                        </div>
+                        <div>
+                            <h5 style="font-weight: 500; color: var(--text-primary);">Bachelor of Technology in Computer Science</h5>
+                            <p style="color: var(--primary-color); margin: 0;">Federal University of Technology Owerri</p>
+                            <p style="color: var(--text-secondary); font-size: 0.875rem; margin: 0;">2014 - 2019 | GPA: 4.5/5.0</p>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <h5 style="font-weight: 500; color: var(--text-primary);">AWS Certified Cloud professional</h5>
+                            <p style="color: var(--primary-color); margin: 0;">Amazon Web Services</p>
+                            <p style="color: var(--text-secondary); font-size: 0.875rem; margin: 0;">2023 - Present</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card" style="margin-top: 1.5rem;">
+                        <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 1rem;">Technical Skills</h4>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Frontend</h4>
+                                <ul>
+                                    <li>React/Next.js</li>
+                                    <li>TypeScript</li>
+                                    <li>Tailwind CSS</li>
+                                    <li>Vue.js</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Backend</h4>
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>Python</li>
+                                    <li>PostgreSQL</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Tools</h4>
+                                <ul>
+                                    <li>Docker</li>
+                                    <li>AWS</li>
+                                    <li>Git</li>
+                                    <li>Jest</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>AI and NLP</h4>
+                                <ul>
+                                    <li>AI and LLMs</li>
+                                    <li>Deep Learning</li>
+                                    <li>Machine Learning and MLOps</li>
+                                    <li>NLP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-subtitle">Have a project in mind? I'd love to discuss how we can bring your ideas to life.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info-section">
+                    <h3>Get In Touch</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>augustineogelo@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>916-598-9810</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Reno, NV</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 2rem;">
+                        <h4 style="font-weight: 500; margin-bottom: 1rem;">Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/augustine-ofoegbu-3b899915a" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/aofoegbu" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://x.com/augustine_ogelo" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://aofoegbu.github.io/ogelo_page/" class="social-link">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Discussion" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Augustine Ofoegbu. All rights reserved.</p>
+            <!-- <p style="font-size: 0.875rem; margin-top: 0.5rem;">Designed and developed with ❤️ using modern web technologies.</p>  -->
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+        
+        // Smooth scrolling for navigation links
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Hero buttons smooth scrolling
+        const heroButtons = document.querySelectorAll('.hero-buttons a');
+        heroButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(button.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                subject: formData.get('subject'),
+                message: formData.get('message')
+            };
+            
+            // Simulate form submission
+            alert('Message sent! Thank you for reaching out. I\'ll get back to you soon.');
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.backdropFilter = 'blur(15px)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.backdropFilter = 'blur(10px)';
+            }
+        });
+        
+        // Animate skill bars on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const skillsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-progress');
+                    skillBars.forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 100);
+                    });
+                }
+            });
+        }, observerOptions);
+        
+        const skillsSection = document.querySelector('#about');
+        if (skillsSection) {
+            skillsObserver.observe(skillsSection);
+        }
+        
+        // Add animation classes to elements when they come into view
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        // Observe sections for animation
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            fadeObserver.observe(section);
+        });
+        
+        // Animate project cards
+        const projectCards = document.querySelectorAll('.project-card');
+        projectCards.forEach(card => {
+            fadeObserver.observe(card);
+        });
+    </script>
+</body>
+</html>
