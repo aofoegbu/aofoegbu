@@ -1,4 +1,4 @@
-## About Me
+## About Me - https://aofoegbu.github.io/ogelo_page/
 I'm a Computer Science graduate student at the University of Nevada, Reno, with interest in AI/LLMs, data science/analytics, enterprise support, and MIS systems. I build intelligent, user-focused tools that blend deep technical functionality with practical business value. I'm also deeply interested in research involving AI, Large Language Models (LLMs), and Natural Language Processing (NLP).
 
 ## What I do
