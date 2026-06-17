@@ -57,7 +57,7 @@ Designed scalable backend services with FastAPI, Docker, Redis, and asynchronous
 
 ## 2. Customer Support LLM Agent
 <p align="center">
-  [https://supportbot.ogelollm.app](https://supportbot.ogelollm.app)
+  https://supportbot.ogelollm.app
 </p><!-- Add Project Screenshot Here -->
 
 <p align="center">
@@ -90,7 +90,7 @@ Integrated the system with SaaS tools such as CRM, billing, and ticketing platfo
 
 ## 3. Multi-Modal AI Beauty & Salon Intelligence Platform
 <p align="center">
-  [https://beauty.ogelollm.app](https://beauty.ogelollm.app)
+  https://beauty.ogelollm.app
 </p><!-- Add Project Screenshot Here -->
 
 <p align="center">
@@ -123,7 +123,7 @@ Implemented demand forecasting, appointment optimization, and customer personali
 
 ## 4. RAG + Personalization Engine
 <p align="center">
-  [https://recommender.ogelollm.app](https://recommender.ogelollm.app)
+  https://recommender.ogelollm.app
 </p><!-- Add Project Screenshot Here -->
 
 <p align="center">
