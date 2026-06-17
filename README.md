@@ -26,7 +26,7 @@ My focus areas include:
 <!-- Add Project Screenshot Here -->
 
 <p align="center">
-  <img src="images/agentic-ecommerce.png" width="800">
+  <img src="images/agent_core.png" width="800">
 </p>
 
 ### Overview
@@ -58,7 +58,7 @@ Designed scalable backend services with FastAPI, Docker, Redis, and asynchronous
 <!-- Add Project Screenshot Here -->
 
 <p align="center">
-  <img src="images/customer-support-agent.png" width="800">
+  <img src="images/support_portal.png" width="800">
 </p>
 
 ### Overview
@@ -85,12 +85,44 @@ Integrated the system with SaaS tools such as CRM, billing, and ticketing platfo
 
 ---
 
-## 3. RAG + Personalization Engine
+## 3. Multi-Modal AI Beauty & Salon Intelligence Platform
 
 <!-- Add Project Screenshot Here -->
 
 <p align="center">
-  <img src="images/rag-personalization.png" width="800">
+  <img src="images/beauty.png" width="800">
+</p>
+
+### Overview
+
+Developed a multimodal AI platform that combined computer vision and natural language processing to provide personalized beauty, wellness, and salon service recommendations from both image and text inputs.
+
+Built AI-powered consultation, stylist matching, and booking optimization features using vision-language models, recommendation systems, and conversational AI.
+
+Implemented demand forecasting, appointment optimization, and customer personalization capabilities to improve booking conversion, operational efficiency, and user experience for salon and wellness businesses.
+
+### Technologies
+
+`Computer Vision` `OpenAI` `Vision Models` `FastAPI` `Python` `AWS` `Docker`
+
+### Key Features
+
+* Image + text understanding
+* Beauty consultation assistant
+* Stylist matching
+* Booking optimization
+* Demand forecasting
+* Personalized recommendations
+* Multi-modal AI workflows
+
+---
+
+## 4. RAG + Personalization Engine
+
+<!-- Add Project Screenshot Here -->
+
+<p align="center">
+  <img src="images/rag.png" width="800">
 </p>
 
 ### Overview
@@ -117,69 +149,7 @@ Improved recommendation relevance through ranking optimization techniques that i
 
 ---
 
-## 4. Cloud-Deployed AI Microservices System
 
-<!-- Add Project Screenshot Here -->
-
-<p align="center">
-  <img src="images/cloud-microservices.png" width="800">
-</p>
-
-### Overview
-
-Engineered a cloud-native AI platform using a microservices architecture deployed on AWS with EC2, S3, Lambda, Docker, and Kubernetes.
-
-Designed scalable services for AI inference, recommendation systems, retrieval pipelines, and asynchronous processing while implementing automated CI/CD, monitoring, and auto-scaling capabilities.
-
-Improved reliability and operational efficiency through container orchestration, distributed service management, and production-grade observability practices.
-
-### Technologies
-
-`AWS` `EC2` `S3` `Lambda` `Docker` `Kubernetes` `FastAPI` `Python`
-
-### Key Features
-
-* Microservices architecture
-* Kubernetes orchestration
-* Docker containerization
-* CI/CD pipelines
-* Monitoring & observability
-* Auto-scaling
-* Cloud-native deployment
-
----
-
-## 5. Multi-Modal AI Beauty & Salon Intelligence Platform
-
-<!-- Add Project Screenshot Here -->
-
-<p align="center">
-  <img src="images/multimodal-beauty-ai.png" width="800">
-</p>
-
-### Overview
-
-Developed a multimodal AI platform that combined computer vision and natural language processing to provide personalized beauty, wellness, and salon service recommendations from both image and text inputs.
-
-Built AI-powered consultation, stylist matching, and booking optimization features using vision-language models, recommendation systems, and conversational AI.
-
-Implemented demand forecasting, appointment optimization, and customer personalization capabilities to improve booking conversion, operational efficiency, and user experience for salon and wellness businesses.
-
-### Technologies
-
-`Computer Vision` `OpenAI` `Vision Models` `FastAPI` `Python` `AWS` `Docker`
-
-### Key Features
-
-* Image + text understanding
-* Beauty consultation assistant
-* Stylist matching
-* Booking optimization
-* Demand forecasting
-* Personalized recommendations
-* Multi-modal AI workflows
-
----
 
 # 🛠 Technical Skills
 
