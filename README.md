@@ -22,7 +22,7 @@ My focus areas include:
 ---
 
 ## 1. Agentic AI E-Commerce SaaS Platform
-
+[Link](https://commerce.ogelollm.app)
 <!-- Add Project Screenshot Here -->
 
 <p align="center">
@@ -54,7 +54,7 @@ Designed scalable backend services with FastAPI, Docker, Redis, and asynchronous
 ---
 
 ## 2. Customer Support LLM Agent
-
+[Link](https://supportbot.ogelollm.app)
 <!-- Add Project Screenshot Here -->
 
 <p align="center">
@@ -86,7 +86,7 @@ Integrated the system with SaaS tools such as CRM, billing, and ticketing platfo
 ---
 
 ## 3. Multi-Modal AI Beauty & Salon Intelligence Platform
-
+[Link](https://beauty.ogelollm.app)
 <!-- Add Project Screenshot Here -->
 
 <p align="center">
@@ -118,7 +118,7 @@ Implemented demand forecasting, appointment optimization, and customer personali
 ---
 
 ## 4. RAG + Personalization Engine
-
+[Link](https://recommender.ogelollm.app)
 <!-- Add Project Screenshot Here -->
 
 <p align="center">
