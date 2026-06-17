@@ -23,7 +23,7 @@ My focus areas include:
 
 ## 1. Agentic AI E-Commerce SaaS Platform
 <p align="center">
-  [https://commerce.ogelollm.app](https://commerce.ogelollm.app)
+  https://commerce.ogelollm.app
 </p>
 <!-- Add Project Screenshot Here -->
 
