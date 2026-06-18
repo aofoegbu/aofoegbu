@@ -33,11 +33,11 @@ My focus areas include:
 
 ### Overview
 
-Developed a production-grade Agentic AI SaaS platform that leveraged multi-agent workflows, task decomposition, memory systems, and tool-calling capabilities to automate complex e-commerce operations.
+A production-grade Agentic AI SaaS platform that leveraged multi-agent workflows, task decomposition, memory systems, and tool-calling capabilities to automate complex e-commerce operations.
 
-Built autonomous AI agents capable of product discovery, customer support, marketing content generation, and business analytics using LLM reasoning loops and Retrieval-Augmented Generation (RAG).
+Uses autonomous AI agents capable of product discovery, customer support, marketing content generation, and business analytics using LLM reasoning loops and Retrieval-Augmented Generation (RAG).
 
-Designed scalable backend services with FastAPI, Docker, Redis, and asynchronous queue processing to support high-volume production workloads.
+Implements scalable backend services with FastAPI, Docker, Redis, and asynchronous queue processing to support high-volume production workloads.
 
 ### Technologies
 
@@ -66,11 +66,11 @@ Designed scalable backend services with FastAPI, Docker, Redis, and asynchronous
 
 ### Overview
 
-Built an AI-powered customer support platform that automated ticket classification, issue resolution, and intelligent escalation using Large Language Models and NLP techniques.
+An AI-powered customer support platform that automated ticket classification, issue resolution, and intelligent escalation using Large Language Models and NLP techniques.
 
-Implemented Retrieval-Augmented Generation (RAG), confidence-based decision making, and human-in-the-loop workflows to safely resolve customer inquiries while reducing support workload.
+Implements Retrieval-Augmented Generation (RAG), confidence-based decision making, and human-in-the-loop workflows to safely resolve customer inquiries while reducing support workload.
 
-Integrated the system with SaaS tools such as CRM, billing, and ticketing platforms using FastAPI-based microservices and cloud-native deployment practices.
+The system integrates with SaaS tools such as CRM, billing, and ticketing platforms using FastAPI-based microservices and cloud-native deployment practices.
 
 ### Technologies
 
@@ -99,11 +99,11 @@ Integrated the system with SaaS tools such as CRM, billing, and ticketing platfo
 
 ### Overview
 
-Developed a multimodal AI platform that combined computer vision and natural language processing to provide personalized beauty, wellness, and salon service recommendations from both image and text inputs.
+A multimodal AI platform that combined computer vision and natural language processing to provide personalized beauty, wellness, and salon service recommendations from both image and text inputs.
 
-Built AI-powered consultation, stylist matching, and booking optimization features using vision-language models, recommendation systems, and conversational AI.
+Some of the features include AI-powered consultation, stylist matching, and booking optimization features using vision-language models, recommendation systems, and conversational AI.
 
-Implemented demand forecasting, appointment optimization, and customer personalization capabilities to improve booking conversion, operational efficiency, and user experience for salon and wellness businesses.
+Other features include demand forecasting, appointment optimization, and customer personalization capabilities to improve booking conversion, operational efficiency, and user experience for salon and wellness businesses.
 
 ### Technologies
 
@@ -132,11 +132,11 @@ Implemented demand forecasting, appointment optimization, and customer personali
 
 ### Overview
 
-Designed a personalized recommendation engine that combined Retrieval-Augmented Generation, vector embeddings, semantic search, and behavioral memory to deliver context-aware recommendations.
+A personalized recommendation engine that combined Retrieval-Augmented Generation, vector embeddings, semantic search, and behavioral memory to deliver context-aware recommendations.
 
-Developed a hybrid PostgreSQL and vector database architecture to store long-term user preferences, interaction history, and semantic embeddings for real-time personalization.
+Uses a hybrid PostgreSQL and vector database architecture to store long-term user preferences, interaction history, and semantic embeddings for real-time personalization.
 
-Improved recommendation relevance through ranking optimization techniques that incorporated user behavior, recency signals, semantic similarity, and engagement metrics.
+The system uses improved recommendation relevance through ranking optimization techniques that incorporated user behavior, recency signals, semantic similarity, and engagement metrics.
 
 ### Technologies
 
