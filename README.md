@@ -14,7 +14,7 @@ My focus areas include:
 * ☁️ AWS Cloud Infrastructure
 * 🐳 Docker & Kubernetes
 * ⚡ FastAPI & Python
-
+  
 ---
 
 # 🚀 Featured Projects
