@@ -207,6 +207,24 @@ Uses a hybrid PostgreSQL and vector database architecture to store long-term use
 
 The system uses improved recommendation relevance through ranking optimization techniques that incorporated user behavior, recency signals, semantic similarity, and engagement metrics.
 
+RAG Personalization Engine is a full-stack demo that shows how modern AI recommendation systems work — combining semantic search, behavioral memory, and generative AI to surface the right SaaS products for a specific user.
+
+Core features:
+
+Dashboard — personalized home screen showing AI-ranked product recommendations with a 4-component score breakdown (semantic match, user preference, recency, popularity). GPT-4o-mini writes a one-sentence explanation for each recommendation based on the user's history.
+
+Behavioral Profile — a sidebar panel on the dashboard that shows the engine's real-time read of the user: current intent, learned interests (derived from tags across all interactions), and recent searches from the last 24 hours.
+
+Semantic Search — natural language product search powered by TF-IDF cosine similarity. Results are re-ranked by the user's behavioral history so frequent CRM users see CRM-adjacent results boosted higher.
+
+Product Catalog — all 24 products across 8 categories (CRM, Marketing Automation, Analytics, AI Tools, Workflow Automation, Customer Support, Project Management) with a category filter. Every click, view, purchase, and rating is logged as a behavioral event.
+
+Product Detail — shows full product info and lets you simulate interactions (view, click, purchase, rating). Each interaction updates the recommendation engine in real time. A "Similar Recommendations" panel at the bottom uses the same scoring engine.
+
+Memory — visualizes what the engine knows about the user split into short-term memory (current session activity, recent searches, inferred intent) and long-term memory (preferred categories ranked by weighted engagement, learned interests, total interactions, event breakdown by type).
+
+The scoring formula is: 40% semantic similarity to user interest profile + 30% behavioral preference score + 20% recency-adjusted popularity + 10% global popularity score.
+
 ### Technologies
 
 `Python` `OpenAI Embeddings` `Pinecone` `pgvector` `PostgreSQL` `FastAPI`
