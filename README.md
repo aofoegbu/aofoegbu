@@ -39,6 +39,42 @@ Uses autonomous AI agents capable of product discovery, customer support, market
 
 Implements scalable backend services with FastAPI, Docker, Redis, and asynchronous queue processing to support high-volume production workloads.
 
+AgentCore is a multi-agent AI-powered e-commerce command center — a full-stack SaaS platform that gives online store operators an AI team working behind the scenes to research products, handle customers, create marketing content, and surface business insights in real time.
+
+Features
+🤖 AI Agents
+Five specialized agents you can run on demand:
+
+Orchestrator — coordinates all four agents in a four-step Think → Plan → Act → Reflect loop for complex multi-domain tasks
+Product Research — finds and compares products, evaluates trends and competitive positioning
+Customer Support — drafts replies and resolves customer inquiries automatically
+Marketing Content — generates campaigns, email copy, social posts, and SEO descriptions
+Analytics — surfaces KPIs, trends, and actionable business insights
+Live execution panel streams each step as it happens, and every run is saved to Task History with expandable results.
+
+💬 AI Chat
+A persistent multi-conversation chat interface. Start new threads, ask free-form questions about your store, and get streaming AI responses — all saved across sessions.
+
+📦 Products
+A searchable product catalog with category badges, star ratings, and stock levels. Add new products via a validated dialog.
+
+👥 Customers
+A customer directory segmented by value tier (VIP / Regular / New). Raise AI-generated support tickets for any customer — the agent reads the issue, drafts a professional response, and logs the ticket automatically.
+
+📋 Orders
+Full order list with status counters (Pending / Processing / Shipped / Delivered / Cancelled), expandable line-item details, and inline status updates that reflect immediately in the counter cards.
+
+📣 Marketing
+Generate email campaigns, social media posts, SEO copy, and product descriptions with tone and audience controls. Copy results to clipboard, and revisit any past campaign by clicking it in the Recent Campaigns history.
+
+📊 Analytics
+Daily revenue and order volume charts, top-line KPI metrics, and an AI Insights generator that produces an executive summary, key findings, and prioritized recommendations — configurable by focus area and time window.
+
+🖥️ Dashboard
+At-a-glance command center: revenue, orders, customers, and agent run KPIs; a revenue trend area chart; customer segment breakdown; top products by revenue; and a live agent activity feed.
+
+Built on React + Vite + Tailwind + shadcn/ui on the frontend, Express 5 + Drizzle ORM + PostgreSQL on the backend, and OpenAI GPT for all agent intelligence — with real-time SSE streaming throughout.
+
 ### Technologies
 
 `Python` `FastAPI` `LangGraph` `LangChain` `OpenAI` `Redis` `PostgreSQL` `Docker` `AWS`
