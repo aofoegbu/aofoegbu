@@ -108,6 +108,25 @@ Implements Retrieval-Augmented Generation (RAG), confidence-based decision makin
 
 The system integrates with SaaS tools such as CRM, billing, and ticketing platforms using FastAPI-based microservices and cloud-native deployment practices.
 
+SupportAI is a full-stack AI-powered customer support platform that handles incoming support requests automatically — classifying, resolving, and escalating them without human intervention where possible.
+
+Customer Support Portal
+Customers chat directly with an AI assistant powered by gpt-5-mini. The AI streams responses in real time, draws on the knowledge base to answer questions accurately, and automatically flags complex or high-risk issues for human review.
+
+Ticket Management
+Every chat or submitted issue becomes a ticket. Agents can view all tickets in a filterable table — searchable by keyword, filterable by status and category. Each ticket shows the AI's classification, confidence score, and generated response. Agents can escalate tickets with notes or mark them resolved.
+
+AI Classification & Auto-Resolution
+When a ticket is created, a single AI call classifies its category (billing, technical, account, product, bug) and priority (low → urgent), assesses its confidence, and attempts an answer using the knowledge base. Tickets with confidence ≥ 80% and a valid answer are auto-resolved instantly. Lower confidence or high-risk topics (billing disputes, security) are escalated to a human agent.
+
+Knowledge Base
+A searchable library of help articles that feeds directly into the AI's context window. Agents can create, edit, and delete articles. The more articles exist, the better the AI's resolution accuracy. Supports category tagging and keyword tags.
+
+Agent Dashboard
+Live metrics at a glance: total tickets, open/auto-resolved/escalated/closed counts, AI auto-resolution rate, average confidence score, and a bar chart breaking ticket volume down by category.
+
+Built with React + Express, PostgreSQL for storage, and gpt-5-mini for cost-efficient AI — no vector database required.
+
 ### Technologies
 
 `Python` `FastAPI` `OpenAI` `RAG` `PostgreSQL` `Redis` `Docker` `AWS`
