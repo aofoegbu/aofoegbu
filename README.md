@@ -160,6 +160,20 @@ Some of the features include AI-powered consultation, stylist matching, and book
 
 Other features include demand forecasting, appointment optimization, and customer personalization capabilities to improve booking conversion, operational efficiency, and user experience for salon and wellness businesses.
 
+Lumière is a luxury AI-powered beauty and salon management platform. Here's what it does:
+
+AI Consultant — a multimodal chat interface where clients describe their desired look, upload a photo of their current hair, and get personalized service recommendations from an AI beauty expert. After each response, they can generate a visual style preview image (via Pollinations.ai) to see their look before committing.
+
+Services — a browsable catalog of 10 salon offerings (cuts, color, balayage, keratin treatments, facials, etc.) with pricing and duration.
+
+Stylists — profiles for 4 in-house stylists with their specialties displayed.
+
+Book — a 4-step appointment booking flow: pick a service, choose a stylist, select a date and time, fill in your details, and confirm. Appointments are saved to the database.
+
+Dashboard — an analytics view for salon owners showing revenue trends, appointment counts, top services by demand, and a list of upcoming appointments — all rendered as interactive charts.
+
+The design is minimalist luxury: Playfair Display serif headings, champagne tones, clean whitespace, and smooth Framer Motion animations throughout. There's also a dark mode toggle in the nav. The backend is a Node/Express API backed by PostgreSQL.
+
 ### Technologies
 
 `Computer Vision` `OpenAI` `Vision Models` `FastAPI` `Python` `AWS` `Docker`
