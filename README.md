@@ -46,10 +46,15 @@ Features
 Five specialized agents you can run on demand:
 
 Orchestrator — coordinates all four agents in a four-step Think → Plan → Act → Reflect loop for complex multi-domain tasks
+
 Product Research — finds and compares products, evaluates trends and competitive positioning
+
 Customer Support — drafts replies and resolves customer inquiries automatically
+
 Marketing Content — generates campaigns, email copy, social posts, and SEO descriptions
+
 Analytics — surfaces KPIs, trends, and actionable business insights
+
 Live execution panel streams each step as it happens, and every run is saved to Task History with expandable results.
 
 💬 AI Chat
